@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/poster"
+            android:contentDescription="Poster"
+            android:layout_width="135dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/poster"
+            android:text="@string/demoTitle"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleText"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/poster"
+            android:text="Genre:"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/genreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/date"
+            android:layout_below="@id/titleText"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/genre"
+            android:layout_toRightOf="@id/poster"
+            android:text="Science Fiction, Action, Adventure"
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genre"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/poster"
+            android:text="Release Date:"
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genreText"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/date"
+            android:text="12/16/2022"
+            android:textColor="#000"
+            android:textSize="11sp" />
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/poster"
+            android:text="Rating:"
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/ratingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateText"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/rating"
+            android:text="8.3"
+            android:textColor="#000"
+            android:textSize="11sp" />
+        <TextView
+            android:id="@+id/runtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/poster"
+            android:text="Run Time:"
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/runtimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingText"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/runtime"
+            android:text="3h 12m"
+            android:textColor="#000"
+            android:textSize="11sp" />
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/runtime"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/poster"
+            android:text="Overview:"
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/overviewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overview"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/poster"
+            android:text="Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure."
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
