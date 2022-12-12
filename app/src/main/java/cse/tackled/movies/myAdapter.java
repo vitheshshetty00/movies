@@ -27,7 +27,7 @@ public class myAdapter extends FirebaseRecyclerAdapter<model,myAdapter.myViewHol
         holder.ratingText.setText(model.getRating());
         holder.runtimeText.setText(model.getRuntime());
         holder.overviewText.setText(model.getOverview());
-        Glide.with(holder.poster.getContext()).load(model.getPoster()).into(holder.poster);
+        Glide.with(holder.poster.getContext()).load(model.getPurl()).into(holder.poster);
 
     }
 

@@ -42,6 +42,64 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850223238781:android:aa0e0ea544f81dbbdf6b14",
+        "android_client_info": {
+          "package_name": "cse.tackled.movies_00"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850223238781-oe9ehu1a5c1sfulmdtuvqs9brtlfc6ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPnqcwEobBiANGZNWDJZ6ZZyXXQgh9sWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850223238781-oe9ehu1a5c1sfulmdtuvqs9brtlfc6ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850223238781:android:062eb8c5aeab808ddf6b14",
+        "android_client_info": {
+          "package_name": "cse.tackled.newmovies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850223238781-oe9ehu1a5c1sfulmdtuvqs9brtlfc6ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPnqcwEobBiANGZNWDJZ6ZZyXXQgh9sWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850223238781-oe9ehu1a5c1sfulmdtuvqs9brtlfc6ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"

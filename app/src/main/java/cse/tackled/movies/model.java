@@ -1,83 +1,74 @@
 package cse.tackled.movies;
 
 public class model {
-    String Director,Genre,Overview,Poster,Rating,Release,Runtime,Title;
+    String genre,overview,purl,rating,release,runtime,title;
 
     public model() {
     }
 
-    public model(String director, String genre, String overview, String poster, String rating, String release, String runtime, String title) {
-        Director = director;
-        Genre = genre;
-        Overview = overview;
-        Poster = poster;
-        Rating = rating;
-        Release = release;
-        Runtime = runtime;
-        Title = title;
-    }
-
-    public String getDirector() {
-        return Director;
-    }
-
-    public void setDirector(String director) {
-        Director = director;
+    public model(String genre, String overview, String purl, String rating, String release, String runtime, String title) {
+        this.genre = genre;
+        this.overview = overview;
+        this.purl = purl;
+        this.rating = rating;
+        this.release = release;
+        this.runtime = runtime;
+        this.title = title;
     }
 
     public String getGenre() {
-        return Genre;
+        return genre;
     }
 
     public void setGenre(String genre) {
-        Genre = genre;
+        this.genre = genre;
     }
 
     public String getOverview() {
-        return Overview;
+        return overview;
     }
 
     public void setOverview(String overview) {
-        Overview = overview;
+        this.overview = overview;
     }
 
-    public String getPoster() {
-        return Poster;
+    public String getPurl() {
+        return purl;
     }
 
-    public void setPoster(String poster) {
-        Poster = poster;
+    public void setPurl(String purl) {
+        this.purl = purl;
     }
 
     public String getRating() {
-        return Rating;
+        return rating;
     }
 
     public void setRating(String rating) {
-        Rating = rating;
+        this.rating = rating;
     }
 
     public String getRelease() {
-        return Release;
+        return release;
     }
 
     public void setRelease(String release) {
-        Release = release;
+        this.release = release;
     }
 
     public String getRuntime() {
-        return Runtime;
+        return runtime;
     }
 
     public void setRuntime(String runtime) {
-        Runtime = runtime;
+        this.runtime = runtime;
     }
 
     public String getTitle() {
-        return Title;
+        return title;
     }
 
     public void setTitle(String title) {
-        Title = title;
+        this.title = title;
     }
 }
