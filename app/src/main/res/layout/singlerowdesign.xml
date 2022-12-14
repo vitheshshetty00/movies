@@ -14,9 +14,10 @@
 
         <ImageView
             android:id="@+id/poster"
-            android:contentDescription="Poster"
+            android:layout_centerVertical="true"
             android:layout_width="135dp"
             android:layout_height="200dp"
+            android:contentDescription="Poster"
             android:src="@mipmap/ic_launcher" />
 
         <TextView

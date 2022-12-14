@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".descfragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/descPoster"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginVertical="50dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:src="@drawable/avatar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.076" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+
+            android:layout_marginTop="10dp"
+            android:text="@string/demoTitle"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descPoster" />
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleText"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Genre:"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+        <TextView
+            android:id="@+id/genreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/date"
+            android:layout_below="@id/titleText"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/genre"
+            android:layout_toRightOf="@id/poster"
+            android:text="Science Fiction, Action, Adventure"
+            android:textColor="#000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/genre"
+            app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genre"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/poster"
+            android:text="Release Date:"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genre" />
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genreText"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/date"
+            android:text="12/16/2022"
+            android:textColor="#000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/date"
+            app:layout_constraintTop_toBottomOf="@+id/genreText" />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/poster"
+            android:text="Rating:"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date" />
+
+        <TextView
+            android:id="@+id/ratingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateText"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/rating"
+            android:text="8.3"
+            android:textColor="#000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/rating"
+            app:layout_constraintTop_toBottomOf="@+id/date" />
+
+        <TextView
+            android:id="@+id/runtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/poster"
+            android:text="Run Time:"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rating" />
+
+        <TextView
+            android:id="@+id/runtimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:text="3h 12m"
+            android:textColor="#000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/runtime"
+            app:layout_constraintTop_toBottomOf="@id/ratingText" />
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Overview:"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/runtime" />
+
+        <TextView
+            android:id="@+id/overviewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:text="Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure."
+            android:textColor="#000"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/overview" />
+
+<!--        <com.google.android.youtube.player.YouTubePlayerView-->
+<!--            android:id="@+id/ytPlayer"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="1.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/overviewText" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
